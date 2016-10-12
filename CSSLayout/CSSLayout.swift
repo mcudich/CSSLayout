@@ -6,8 +6,8 @@
 //  Copyright © 2016 Matias Cudich. All rights reserved.
 //
 
-import Foundation
-import CSSLayoutImpl
+import CoreGraphics
+import CSSLayout
 
 public struct CSSEdges: Equatable {
   let left: Float
@@ -64,18 +64,6 @@ public struct CSSLayout {
 
     self.frame = CGRect(x: x, y: y, width: width, height: height)
     self.children = children
-  }
-
-  func apply(to view: View) {
-    view.frame = frame
-
-    guard let containerView = view as? ContainerView else {
-      return
-    }
-
-    for (index, child) in children.enumerated() {
-      child.apply(to: containerView.children[index])
-    }
   }
 }
 
