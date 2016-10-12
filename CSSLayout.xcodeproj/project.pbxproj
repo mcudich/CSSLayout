@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		D8C3B3BE1DADFCB000A1A123 /* CSSLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C3B3B41DADFCB000A1A123 /* CSSLayout.framework */; };
 		D8C3B3C31DADFCB000A1A123 /* CSSLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3C21DADFCB000A1A123 /* CSSLayoutTests.swift */; };
-		D8C3B3C51DADFCB000A1A123 /* CSSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3B71DADFCB000A1A123 /* CSSLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C3B3F31DADFE1300A1A123 /* CSSLayout.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3D91DADFD4400A1A123 /* CSSLayout.c */; };
 		D8C3B3F41DADFE1300A1A123 /* CSSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DA1DADFD4400A1A123 /* CSSLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C3B3F51DADFE1300A1A123 /* CSSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DB1DADFD4400A1A123 /* CSSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C3B3F61DADFE1300A1A123 /* CSSNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3DC1DADFD4400A1A123 /* CSSNodeList.c */; };
-		D8C3B3F71DADFE1300A1A123 /* CSSNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */; };
+		D8C3B3F71DADFE1300A1A123 /* CSSNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C3B3FC1DADFFFD00A1A123 /* CSSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */; };
 		D8C3B3FD1DAE012600A1A123 /* CSSLayoutImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C3B3E81DADFD5E00A1A123 /* CSSLayoutImpl.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		D8C3B3B41DADFCB000A1A123 /* CSSLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8C3B3B71DADFCB000A1A123 /* CSSLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSLayout.h; sourceTree = "<group>"; };
 		D8C3B3B81DADFCB000A1A123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C3B3BD1DADFCB000A1A123 /* CSSLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C3B3C21DADFCB000A1A123 /* CSSLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSLayoutTests.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		D8C3B3B61DADFCB000A1A123 /* CSSLayout */ = {
 			isa = PBXGroup;
 			children = (
-				D8C3B3B71DADFCB000A1A123 /* CSSLayout.h */,
 				D8C3B3B81DADFCB000A1A123 /* Info.plist */,
 				D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */,
 			);
@@ -144,7 +141,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C3B3C51DADFCB000A1A123 /* CSSLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +148,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C3B3F41DADFE1300A1A123 /* CSSLayout.h in Headers */,
 				D8C3B3F51DADFE1300A1A123 /* CSSMacros.h in Headers */,
 				D8C3B3F71DADFE1300A1A123 /* CSSNodeList.h in Headers */,
+				D8C3B3F41DADFE1300A1A123 /* CSSLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -501,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8C3B3F01DADFDC100A1A123 /* Config.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -522,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8C3B3F01DADFDC100A1A123 /* Config.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
