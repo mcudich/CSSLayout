@@ -7,7 +7,6 @@
 //
 
 import CoreGraphics
-import CSSLayout
 
 public struct Edges: Equatable {
   let left: Float

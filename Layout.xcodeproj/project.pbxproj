@@ -11,10 +11,11 @@
 		D8C3B3C31DADFCB000A1A123 /* CSSLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3C21DADFCB000A1A123 /* CSSLayoutTests.swift */; };
 		D8C3B3FC1DADFFFD00A1A123 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */; };
 		D8C578DD1DAE0F6300DC12E5 /* CSSLayout.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3D91DADFD4400A1A123 /* CSSLayout.c */; };
-		D8C578DE1DAE0F6300DC12E5 /* CSSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DA1DADFD4400A1A123 /* CSSLayout.h */; };
-		D8C578DF1DAE0F6300DC12E5 /* CSSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DB1DADFD4400A1A123 /* CSSMacros.h */; };
+		D8C578DE1DAE0F6300DC12E5 /* CSSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DA1DADFD4400A1A123 /* CSSLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C578DF1DAE0F6300DC12E5 /* CSSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DB1DADFD4400A1A123 /* CSSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C578E01DAE0F6300DC12E5 /* CSSNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3DC1DADFD4400A1A123 /* CSSNodeList.c */; };
 		D8C578E11DAE0F6300DC12E5 /* CSSNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */; };
+		D8C578E41DAE119C00DC12E5 /* Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C578E31DAE119C00DC12E5 /* Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSNodeList.h; path = "../Carthage/Checkouts/css-layout/CSSLayout/CSSNodeList.h"; sourceTree = "<group>"; };
 		D8C3B3EB1DADFD5F00A1A123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		D8C578E31DAE119C00DC12E5 /* Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				D8C3B3B81DADFCB000A1A123 /* Info.plist */,
 				D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */,
+				D8C578E31DAE119C00DC12E5 /* Layout.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -119,8 +122,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C578E11DAE0F6300DC12E5 /* CSSNodeList.h in Headers */,
+				D8C578E41DAE119C00DC12E5 /* Layout.h in Headers */,
 				D8C578DE1DAE0F6300DC12E5 /* CSSLayout.h in Headers */,
+				D8C578E11DAE0F6300DC12E5 /* CSSNodeList.h in Headers */,
 				D8C578DF1DAE0F6300DC12E5 /* CSSMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
