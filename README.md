@@ -1,6 +1,6 @@
 CSSLayout is a tiny Swift wrapper around Facebook's [css-layout](https://github.com/facebook/css-layout) framework.
 
-# Basic Usage
+### Basic Usage
 
 Imagine a simple UIView, with two subviews (represented as `containerNode`, `childNode` and `otherChildNode` below).
 
