@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DBFB9BC53D9C33B5ECFA16CE6152083E4207C214",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EF4E0D78BD66D72DA5A8D5BC350B60E01C5A9EF4" : 9223372036854775807,
+    "DBFB9BC53D9C33B5ECFA16CE6152083E4207C214" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1DB866F9-A558-4AE4-9D4C-4BD4E61D7012",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EF4E0D78BD66D72DA5A8D5BC350B60E01C5A9EF4" : "CSSLayout\/Carthage\/Checkouts\/css-layout\/",
+    "DBFB9BC53D9C33B5ECFA16CE6152083E4207C214" : "CSSLayout\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CSSLayout",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CSSLayout.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mcudich\/CSSLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBFB9BC53D9C33B5ECFA16CE6152083E4207C214"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/facebook\/css-layout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF4E0D78BD66D72DA5A8D5BC350B60E01C5A9EF4"
+    }
+  ]
+}
