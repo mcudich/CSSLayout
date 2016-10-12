@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8C3B3BE1DADFCB000A1A123 /* Layout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C3B3B41DADFCB000A1A123 /* Layout.framework */; };
+		D8C3B3BE1DADFCB000A1A123 /* CSSLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C3B3B41DADFCB000A1A123 /* CSSLayout.framework */; };
 		D8C3B3C31DADFCB000A1A123 /* CSSLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3C21DADFCB000A1A123 /* CSSLayoutTests.swift */; };
-		D8C3B3FC1DADFFFD00A1A123 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */; };
+		D8C3B3FC1DADFFFD00A1A123 /* CSSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */; };
 		D8C578DD1DAE0F6300DC12E5 /* CSSLayout.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3D91DADFD4400A1A123 /* CSSLayout.c */; };
 		D8C578DE1DAE0F6300DC12E5 /* CSSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DA1DADFD4400A1A123 /* CSSLayout.h */; };
 		D8C578DF1DAE0F6300DC12E5 /* CSSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DB1DADFD4400A1A123 /* CSSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C578E01DAE0F6300DC12E5 /* CSSNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3DC1DADFD4400A1A123 /* CSSNodeList.c */; };
 		D8C578E11DAE0F6300DC12E5 /* CSSNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */; };
-		D8C578E41DAE119C00DC12E5 /* Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C578E31DAE119C00DC12E5 /* Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C578E41DAE119C00DC12E5 /* CSSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C578E31DAE119C00DC12E5 /* CSSLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8C3B3B41DADFCB000A1A123 /* Layout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C3B3B41DADFCB000A1A123 /* CSSLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C3B3B81DADFCB000A1A123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8C3B3BD1DADFCB000A1A123 /* CSSLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C3B3C21DADFCB000A1A123 /* CSSLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSLayoutTests.swift; sourceTree = "<group>"; };
@@ -40,8 +40,8 @@
 		D8C3B3DC1DADFD4400A1A123 /* CSSNodeList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CSSNodeList.c; path = "../Carthage/Checkouts/css-layout/CSSLayout/CSSNodeList.c"; sourceTree = "<group>"; };
 		D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSNodeList.h; path = "../Carthage/Checkouts/css-layout/CSSLayout/CSSNodeList.h"; sourceTree = "<group>"; };
 		D8C3B3EB1DADFD5F00A1A123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
-		D8C578E31DAE119C00DC12E5 /* Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
+		D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSLayout.swift; sourceTree = "<group>"; };
+		D8C578E31DAE119C00DC12E5 /* CSSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSLayout.h; path = "../Carthage/Checkouts/css-layout/CSSLayout/CSSLayout.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C3B3BE1DADFCB000A1A123 /* Layout.framework in Frameworks */,
+				D8C3B3BE1DADFCB000A1A123 /* CSSLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		D8C3B3B51DADFCB000A1A123 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8C3B3B41DADFCB000A1A123 /* Layout.framework */,
+				D8C3B3B41DADFCB000A1A123 /* CSSLayout.framework */,
 				D8C3B3BD1DADFCB000A1A123 /* CSSLayoutTests.xctest */,
 			);
 			name = Products;
@@ -86,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D8C3B3B81DADFCB000A1A123 /* Info.plist */,
-				D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */,
-				D8C578E31DAE119C00DC12E5 /* Layout.h */,
+				D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */,
+				D8C578E31DAE119C00DC12E5 /* CSSLayout.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -122,7 +122,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C578E41DAE119C00DC12E5 /* Layout.h in Headers */,
+				D8C578E41DAE119C00DC12E5 /* CSSLayout.h in Headers */,
 				D8C578DE1DAE0F6300DC12E5 /* CSSLayout.h in Headers */,
 				D8C578E11DAE0F6300DC12E5 /* CSSNodeList.h in Headers */,
 				D8C578DF1DAE0F6300DC12E5 /* CSSMacros.h in Headers */,
@@ -132,9 +132,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D8C3B3B31DADFCB000A1A123 /* Layout */ = {
+		D8C3B3B31DADFCB000A1A123 /* CSSLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8C3B3C81DADFCB000A1A123 /* Build configuration list for PBXNativeTarget "Layout" */;
+			buildConfigurationList = D8C3B3C81DADFCB000A1A123 /* Build configuration list for PBXNativeTarget "CSSLayout" */;
 			buildPhases = (
 				D8C3B3AF1DADFCB000A1A123 /* Sources */,
 				D8C3B3B01DADFCB000A1A123 /* Frameworks */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = Layout;
+			name = CSSLayout;
 			productName = CSSLayout;
-			productReference = D8C3B3B41DADFCB000A1A123 /* Layout.framework */;
+			productReference = D8C3B3B41DADFCB000A1A123 /* CSSLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D8C3B3BC1DADFCB000A1A123 /* CSSLayoutTests */ = {
@@ -191,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "Layout" */;
+			buildConfigurationList = D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "CSSLayout" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8C3B3B31DADFCB000A1A123 /* Layout */,
+				D8C3B3B31DADFCB000A1A123 /* CSSLayout */,
 				D8C3B3BC1DADFCB000A1A123 /* CSSLayoutTests */,
 			);
 		};
@@ -232,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C578E01DAE0F6300DC12E5 /* CSSNodeList.c in Sources */,
-				D8C3B3FC1DADFFFD00A1A123 /* Layout.swift in Sources */,
+				D8C3B3FC1DADFFFD00A1A123 /* CSSLayout.swift in Sources */,
 				D8C578DD1DAE0F6300DC12E5 /* CSSLayout.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		D8C3B3C01DADFCB000A1A123 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8C3B3B31DADFCB000A1A123 /* Layout */;
+			target = D8C3B3B31DADFCB000A1A123 /* CSSLayout */;
 			targetProxy = D8C3B3BF1DADFCB000A1A123 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -369,7 +369,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -391,7 +391,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -405,7 +405,7 @@
 				DEVELOPMENT_TEAM = 46UKZ786J3;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout.Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -418,7 +418,7 @@
 				DEVELOPMENT_TEAM = 46UKZ786J3;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout.Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -427,7 +427,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "Layout" */ = {
+		D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "CSSLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8C3B3C61DADFCB000A1A123 /* Debug */,
@@ -436,7 +436,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8C3B3C81DADFCB000A1A123 /* Build configuration list for PBXNativeTarget "Layout" */ = {
+		D8C3B3C81DADFCB000A1A123 /* Build configuration list for PBXNativeTarget "CSSLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8C3B3C91DADFCB000A1A123 /* Debug */,

@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1DB866F9-A558-4AE4-9D4C-4BD4E61D7012",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "EF4E0D78BD66D72DA5A8D5BC350B60E01C5A9EF4" : "CSSLayout\/Carthage\/Checkouts\/css-layout\/",
-    "DBFB9BC53D9C33B5ECFA16CE6152083E4207C214" : "CSSLayout\/"
+    "EF4E0D78BD66D72DA5A8D5BC350B60E01C5A9EF4" : "Layout\/Carthage\/Checkouts\/css-layout\/",
+    "DBFB9BC53D9C33B5ECFA16CE6152083E4207C214" : "Layout\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CSSLayout",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

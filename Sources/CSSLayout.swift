@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-public struct Edges: Equatable {
+public struct CSSEdges: Equatable {
   let left: Float
   let right: Float
   let bottom: Float
@@ -36,7 +36,7 @@ public struct Edges: Equatable {
   }
 }
 
-public func ==(lhs: Edges, rhs: Edges) -> Bool {
+public func ==(lhs: CSSEdges, rhs: CSSEdges) -> Bool {
   return lhs.left == rhs.left && lhs.right == rhs.right && lhs.top == rhs.top && lhs.bottom == rhs.bottom
 }
 
@@ -46,9 +46,9 @@ public func ==(lhs: CSSSize, rhs: CSSSize) -> Bool {
   return lhs.height == rhs.height && lhs.width == rhs.width
 }
 
-public struct Layout {
+public struct CSSLayout {
   public let frame: CGRect
-  public let children: [Layout]
+  public let children: [CSSLayout]
 
   public init(nodeRef: CSSNodeRef) {
     let x = CGFloat(CSSNodeLayoutGetLeft(nodeRef))
@@ -56,9 +56,9 @@ public struct Layout {
     let width = CGFloat(CSSNodeLayoutGetWidth(nodeRef))
     let height = CGFloat(CSSNodeLayoutGetHeight(nodeRef))
 
-    let children: [Layout] = (0..<CSSNodeChildCount(nodeRef)).map {
+    let children: [CSSLayout] = (0..<CSSNodeChildCount(nodeRef)).map {
       let childRef = CSSNodeGetChild(nodeRef, UInt32($0))!
-      return Layout(nodeRef: childRef)
+      return CSSLayout(nodeRef: childRef)
     }
 
     self.frame = CGRect(x: x, y: y, width: width, height: height)
@@ -66,7 +66,7 @@ public struct Layout {
   }
 }
 
-public class LayoutNode: Hashable {
+public class CSSNode: Hashable {
   public var direction: CSSDirection {
     set {
       if newValue != direction {
@@ -188,36 +188,36 @@ public class LayoutNode: Hashable {
     }
   }
 
-  public var margin: Edges {
+  public var margin: CSSEdges {
     set {
       if newValue != margin {
         newValue.apply(nodeRef, CSSNodeStyleSetMargin)
       }
     }
     get {
-      return Edges(nodeRef, getEdge: CSSNodeStyleGetMargin)
+      return CSSEdges(nodeRef, getEdge: CSSNodeStyleGetMargin)
     }
   }
 
-  public var position: Edges {
+  public var position: CSSEdges {
     set {
       if newValue != position {
         newValue.apply(nodeRef, CSSNodeStyleSetPosition)
       }
     }
     get {
-      return Edges(nodeRef, getEdge: CSSNodeStyleGetPosition)
+      return CSSEdges(nodeRef, getEdge: CSSNodeStyleGetPosition)
     }
   }
 
-  public var padding: Edges {
+  public var padding: CSSEdges {
     set {
       if newValue != padding {
         newValue.apply(nodeRef, CSSNodeStyleSetPadding)
       }
     }
     get {
-      return Edges(nodeRef, getEdge: CSSNodeStyleGetPadding)
+      return CSSEdges(nodeRef, getEdge: CSSNodeStyleGetPadding)
     }
   }
 
@@ -287,7 +287,7 @@ public class LayoutNode: Hashable {
     }
   }
 
-  public var children: [LayoutNode] {
+  public var children: [CSSNode] {
     set {
       var oldValue = children
       var remainingChildren = Set(oldValue)
@@ -309,7 +309,7 @@ public class LayoutNode: Hashable {
     get {
       let childCount = CSSNodeChildCount(nodeRef)
       return (0..<childCount).map {
-        return LayoutNode(nodeRef: CSSNodeGetChild(nodeRef, $0))
+        return CSSNode(nodeRef: CSSNodeGetChild(nodeRef, $0))
       }
     }
   }
@@ -328,7 +328,7 @@ public class LayoutNode: Hashable {
     self.nodeRef = nodeRef
   }
 
-  public init(direction: CSSDirection = CSSDirectionLTR, flexDirection: CSSFlexDirection = CSSFlexDirectionColumn, justifyContent: CSSJustify = CSSJustifyFlexStart, alignContent: CSSAlign = CSSAlignAuto, alignItems: CSSAlign = CSSAlignStretch, alignSelf: CSSAlign = CSSAlignStretch, positionType: CSSPositionType = CSSPositionTypeRelative, flexWrap: CSSWrapType = CSSWrapTypeNoWrap, overflow: CSSOverflow = CSSOverflowVisible, flexGrow: Float = 0, flexShrink: Float = 0, margin: Edges = Edges(), position: Edges = Edges(), padding: Edges = Edges(), size: CSSSize = CSSSize(width: Float.nan, height: Float.nan), minSize: CSSSize = CSSSize(width: 0, height: 0), maxSize: CSSSize = CSSSize(width: Float.greatestFiniteMagnitude, height: Float.greatestFiniteMagnitude), measure: CSSMeasureFunc? = nil, context: UnsafeMutableRawPointer? = nil, children: [LayoutNode] = []) {
+  public init(direction: CSSDirection = CSSDirectionLTR, flexDirection: CSSFlexDirection = CSSFlexDirectionColumn, justifyContent: CSSJustify = CSSJustifyFlexStart, alignContent: CSSAlign = CSSAlignAuto, alignItems: CSSAlign = CSSAlignStretch, alignSelf: CSSAlign = CSSAlignStretch, positionType: CSSPositionType = CSSPositionTypeRelative, flexWrap: CSSWrapType = CSSWrapTypeNoWrap, overflow: CSSOverflow = CSSOverflowVisible, flexGrow: Float = 0, flexShrink: Float = 0, margin: CSSEdges = CSSEdges(), position: CSSEdges = CSSEdges(), padding: CSSEdges = CSSEdges(), size: CSSSize = CSSSize(width: Float.nan, height: Float.nan), minSize: CSSSize = CSSSize(width: 0, height: 0), maxSize: CSSSize = CSSSize(width: Float.greatestFiniteMagnitude, height: Float.greatestFiniteMagnitude), measure: CSSMeasureFunc? = nil, context: UnsafeMutableRawPointer? = nil, children: [CSSNode] = []) {
     self.nodeRef = CSSNodeNew()
 
     self.direction = direction
@@ -353,11 +353,11 @@ public class LayoutNode: Hashable {
     self.children = children
   }
 
-  public func insertChild(child: LayoutNode, at index: Int) {
+  public func insertChild(child: CSSNode, at index: Int) {
     CSSNodeInsertChild(nodeRef, child.nodeRef, UInt32(index))
   }
 
-  public func removeChild(child: LayoutNode) {
+  public func removeChild(child: CSSNode) {
     CSSNodeRemoveChild(nodeRef, child.nodeRef)
   }
 
@@ -365,9 +365,9 @@ public class LayoutNode: Hashable {
     CSSNodeMarkDirty(nodeRef)
   }
 
-  public func layout(availableWidth: Float = Float.nan, availableHeight: Float = Float.nan) -> Layout {
+  public func layout(availableWidth: Float = Float.nan, availableHeight: Float = Float.nan) -> CSSLayout {
     CSSNodeCalculateLayout(nodeRef, availableWidth, availableHeight, CSSDirectionLTR)
-    return Layout(nodeRef: nodeRef)
+    return CSSLayout(nodeRef: nodeRef)
   }
 
   public func debugPrint() {
@@ -376,6 +376,6 @@ public class LayoutNode: Hashable {
   }
 }
 
-public func ==(lhs: LayoutNode, rhs: LayoutNode) -> Bool {
+public func ==(lhs: CSSNode, rhs: CSSNode) -> Bool {
   return lhs.nodeRef == rhs.nodeRef
 }
