@@ -14,7 +14,7 @@
 		D8C3B3F51DADFE1300A1A123 /* CSSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DB1DADFD4400A1A123 /* CSSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C3B3F61DADFE1300A1A123 /* CSSNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3DC1DADFD4400A1A123 /* CSSNodeList.c */; };
 		D8C3B3F71DADFE1300A1A123 /* CSSNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */; };
-		D8C3B3FC1DADFFFD00A1A123 /* CSSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */; };
+		D8C3B3FC1DADFFFD00A1A123 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */; };
 		D8C3B3FD1DAE012600A1A123 /* CSSLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C3B3E81DADFD5E00A1A123 /* CSSLayout.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +48,7 @@
 		D8C3B3DD1DADFD4400A1A123 /* CSSNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSNodeList.h; path = "../Carthage/Checkouts/css-layout/CSSLayout/CSSNodeList.h"; sourceTree = "<group>"; };
 		D8C3B3E81DADFD5E00A1A123 /* CSSLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C3B3EB1DADFD5F00A1A123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8C3B3F01DADFDC100A1A123 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		D8C3B3F21DADFDC700A1A123 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSLayout.swift; sourceTree = "<group>"; };
+		D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +81,9 @@
 		D8C3B3AA1DADFCB000A1A123 = {
 			isa = PBXGroup;
 			children = (
+				D8C3B3B61DADFCB000A1A123 /* Sources */,
+				D8C3B3C11DADFCB000A1A123 /* Tests */,
 				D8C3B3D81DADFD3200A1A123 /* ThirdParty */,
-				D8C3B3B61DADFCB000A1A123 /* CSSLayout */,
-				D8C3B3C11DADFCB000A1A123 /* CSSLayoutTests */,
 				D8C3B3B51DADFCB000A1A123 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,30 +98,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8C3B3B61DADFCB000A1A123 /* CSSLayout */ = {
+		D8C3B3B61DADFCB000A1A123 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				D8C3B3B81DADFCB000A1A123 /* Info.plist */,
-				D8C3B3FB1DADFFFD00A1A123 /* CSSLayout.swift */,
+				D8C3B3FB1DADFFFD00A1A123 /* Layout.swift */,
 			);
-			path = CSSLayout;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		D8C3B3C11DADFCB000A1A123 /* CSSLayoutTests */ = {
+		D8C3B3C11DADFCB000A1A123 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				D8C3B3C21DADFCB000A1A123 /* CSSLayoutTests.swift */,
 				D8C3B3C41DADFCB000A1A123 /* Info.plist */,
 			);
-			path = CSSLayoutTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		D8C3B3D81DADFD3200A1A123 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				D8C3B3F01DADFDC100A1A123 /* Config.xcconfig */,
 				D8C3B3EB1DADFD5F00A1A123 /* Info.plist */,
-				D8C3B3F21DADFDC700A1A123 /* module.modulemap */,
 				D8C3B3D91DADFD4400A1A123 /* CSSLayout.c */,
 				D8C3B3DA1DADFD4400A1A123 /* CSSLayout.h */,
 				D8C3B3DB1DADFD4400A1A123 /* CSSMacros.h */,
@@ -240,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "CSSLayout" */;
+			buildConfigurationList = D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "Layout" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -288,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C3B3FC1DADFFFD00A1A123 /* CSSLayout.swift in Sources */,
+				D8C3B3FC1DADFFFD00A1A123 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +431,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSLayout/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.CSSLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -457,10 +453,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CSSLayout/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.CSSLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -472,9 +468,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 46UKZ786J3;
-				INFOPLIST_FILE = CSSLayoutTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.CSSLayoutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -485,9 +481,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 46UKZ786J3;
-				INFOPLIST_FILE = CSSLayoutTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.CSSLayoutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -508,7 +504,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.CSSLayoutImpl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout.CSSLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -530,7 +526,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.CSSLayout.CSSLayoutImpl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascudich.Layout.CSSLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -540,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "CSSLayout" */ = {
+		D8C3B3AE1DADFCB000A1A123 /* Build configuration list for PBXProject "Layout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8C3B3C61DADFCB000A1A123 /* Debug */,

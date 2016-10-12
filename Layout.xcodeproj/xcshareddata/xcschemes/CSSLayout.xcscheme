@@ -17,7 +17,7 @@
                BlueprintIdentifier = "D8C3B3E71DADFD5E00A1A123"
                BuildableName = "CSSLayout.framework"
                BlueprintName = "CSSLayout"
-               ReferencedContainer = "container:CSSLayout.xcodeproj">
+               ReferencedContainer = "container:Layout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "D8C3B3E71DADFD5E00A1A123"
             BuildableName = "CSSLayout.framework"
             BlueprintName = "CSSLayout"
-            ReferencedContainer = "container:CSSLayout.xcodeproj">
+            ReferencedContainer = "container:Layout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,7 +66,7 @@
             BlueprintIdentifier = "D8C3B3E71DADFD5E00A1A123"
             BuildableName = "CSSLayout.framework"
             BlueprintName = "CSSLayout"
-            ReferencedContainer = "container:CSSLayout.xcodeproj">
+            ReferencedContainer = "container:Layout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
