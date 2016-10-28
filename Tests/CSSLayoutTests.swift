@@ -10,27 +10,29 @@ import XCTest
 @testable import CSSLayout
 
 class CSSLayoutTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  func testSimpleLayout() {
+    let parent = CSSNode()
+    parent.flexDirection = CSSFlexDirectionRow
+    parent.size = CSSSize(width: 414, height: Float.nan)
+
+    let image = CSSNode()
+    image.size = CSSSize(width: 64, height: 64)
+
+    let text = CSSNode()
+    text.flex = 1
+    text.isTextNode = true
+    text.measure = { node, width, widthMode, height, heightMode in
+      return CSSSize(width: width, height: 100)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+
+    parent.children = [image, text]
+
+    let layout = parent.layout()
+    XCTAssertEqual(414, layout.frame.width)
+    XCTAssertEqual(100, layout.frame.height)
+    XCTAssertEqual(64, layout.children[0].frame.width)
+    XCTAssertEqual(64, layout.children[0].frame.height)
+    XCTAssertEqual(350, layout.children[1].frame.width)
+    XCTAssertEqual(100, layout.children[1].frame.height)
+  }
 }

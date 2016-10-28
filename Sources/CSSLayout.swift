@@ -166,6 +166,19 @@ public class CSSNode: Hashable {
     }
   }
 
+  public var flex: Float {
+    set {
+      CSSNodeStyleSetFlex(nodeRef, newValue)
+    }
+    get {
+      if flexGrow > 0 {
+        return flexGrow
+      } else {
+        return flexShrink
+      }
+    }
+  }
+
   public var flexGrow: Float {
     set {
       if newValue != flexGrow {
@@ -284,6 +297,15 @@ public class CSSNode: Hashable {
     }
     get {
       return CSSNodeGetContext(nodeRef)
+    }
+  }
+
+  public var isTextNode: Bool {
+    set {
+      CSSNodeSetIsTextnode(nodeRef, isTextNode)
+    }
+    get {
+      return CSSNodeGetIsTextnode(nodeRef)
     }
   }
 
